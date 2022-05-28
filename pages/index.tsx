@@ -14,9 +14,6 @@ const Home: NextPage = () => {
           Coffee Connoisseur
         </h1>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-      </footer>
     </div>
   )
 }
