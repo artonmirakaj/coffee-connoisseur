@@ -1,29 +1,29 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Banner from '../components/Banner'
+import styles from '../styles/Home.module.css'
 
-type Props = {
-  buttonText: string,
-  handleOnClick: () => void;
-}
-
-const Home = ({ buttonText, handleOnClick }: Props) => {
+const Home = () => {
 
   const handleOnBannerBtnClick = () => {
     console.log('Banner Button Clicked!');
   }
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 bg-mesh">
+    <div className={styles.container}>
       <Head>
         <title>Coffee Connoisseur</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+      <main className={styles.main}>
         <Banner
           buttonText='View stores nearby'
           handleOnClick={handleOnBannerBtnClick}
         />
+        <div className={styles.heroImage}>
+          <Image src='/static/hero-image.png' width={700} height={400}/>
+        </div>
       </main>
     </div>
   )

@@ -1,6 +1,8 @@
 /** By default, this is a mobile breakpoint **/
 .container {
   margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
@@ -14,6 +16,8 @@
 
 .title1 {
   color: rgba(249, 250, 251, 1);
+  background-color: #febaad;
+  border-radius: 20px;
 }
 
 .title2 {
@@ -26,7 +30,7 @@
   font-size: 1.5rem /* 24px */;
   line-height: 2rem /* 32px */;
 
-  color: var(--text-white-100);
+  color: var(--text-purple);
 }
 
 .buttonWrapper {
@@ -53,13 +57,12 @@
 }
 
 /** 
-  Breakpoints:
-  ------------
-  sm: min-width: 640px; //small device
-  md: min-width: 768px; // medium device
-  lg: min-width: 1024px; // large device
-  xl: min-width: 1280px; // extra large device
-  2xl: min-width: 1536px; // 2 x extra large device
+  Breakpoint prefix	Minimum width	CSS
+  sm:   640px	  @media (min-width: 640px) { ... }
+  md:	  768px	  @media (min-width: 768px) { ... }
+  lg:	  1024px	@media (min-width: 1024px) { ... }
+  xl:	  1280px	@media (min-width: 1280px) { ... }
+  2xl:  1536px	@media (min-width: 1536px) { ... }
 **/
 
 /** sm breakpoint **/

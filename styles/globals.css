@@ -3,8 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply box-border
+  }
+
   body {
-    @apply bg-no-repeat bg-cover h-full
+    @apply bg-no-repeat bg-cover h-full 
+  }
+
+  html {
+    font-family: 'KoHo', sans-serif;
+  }
+
+  a {
+    @apply no-underline
+  }
+
+  button {
+    @apply focus:outline-dotted focus:ring focus:ring-violet-300
   }
 }
 
